@@ -3,12 +3,13 @@ Peter Straka
 02/01/2015  
 
 This page illustrates the calculations from the paper [Estimation of fractal dimension and fractal curvatures from digital images](http://arxiv.org/abs/1408.6333). 
-After loading the workspace `fracCurv.RData` (see main directory) in RStudio, the data sets for the six fractal sets (gasket, carpet, modcarpet, quadrate, triangle, supergasket) become available. The data come from images with resolution $3000 \times 3000$, or $1500 \times 1500$ if the number `2` appears in the data set name.
+After loading the workspace `fracCurv.RData` (see main directory) in RStudio, the data sets for the six fractal sets (gasket, carpet, modcarpet, quadrate, triangle, supergasket) become available. The data come from images with resolution 3000 x 3000, or 1500 x 1500 (if the number `2` appears in the data set name).
 
 Data were calculated using the Java library [GeoStoch](http://www.uni-ulm.de/en/mawi/institute-of-stochastics/software.html); the main method [Haupt.java](./Haupt.java) has been used.
 
 The R-files [fracCurv.R](./fracCurv.R) and [periodogram.r](./periodogram.R) 
 contain the main chunks of R-code and are loaded automatically when loading `fracCurv.Rdata`.
+The directories `1500` and `3000` contain the images of size 1500 x 1500 resp. 3000 x 3000. 
 
 ### Non-arithmetic fits
 

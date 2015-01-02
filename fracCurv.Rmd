@@ -2,7 +2,9 @@
 title: "Fractal Curvature"
 author: "Peter Straka"
 date: "02/01/2015"
-output: html_document
+output:
+  html_document:
+    keep_md: yes
 ---
 
 This page illustrates calculations from the paper [Estimation of fractal dimension and fractal curvatures from digital images](http://arxiv.org/abs/1408.6333). 
@@ -22,7 +24,7 @@ fracCurv(gasket,arithmetic = FALSE)
 This results in a linear fit to the data 
 $y_{kj}  := \log \left( \varepsilon_j^{-k} |C_k(F_{\varepsilon_j})|\right), \quad k=0,\ldots, d$. The output contains estimated fractal dimension, curvatures and fitted linear model.
 
-```{r, echo=FALSE, eval=TRUE}
+```{r LRE, echo=FALSE, eval=TRUE, fig.path="./figure/"}
 fracCurv(gasket,arithmetic = FALSE)
 ```
 
@@ -36,7 +38,7 @@ fracCurv(gasket,arithmetic = TRUE)
 
 Here the period is estimated via a periodogram of the data: 
 
-```{r, echo=FALSE, eval=TRUE}
+```{r NRE, echo=FALSE, eval=TRUE, fig.path="./figure/"}
 fracCurv(gasket,arithmetic = TRUE)
 ```
 

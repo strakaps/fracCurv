@@ -1,12 +1,9 @@
----
-title: "fracCurv"
-author: "Peter Straka"
-date: "02/01/2015"
-output: html_document
----
+# Fractal Curvature
+Peter Straka  
+02/01/2015  
 
 This page illustrates calculations from the paper [Estimation of fractal dimension and fractal curvatures from digital images](http://arxiv.org/abs/1408.6333). 
-After loading the workspace [fracCurv.RData](./fracCurv.Rdata), the data sets for the six fractal sets (gasket, carpet, modcarpet, quadrate, triangle, supergasket) become available. 
+After loading the workspace [fracCurv.RData](fracCurv.Rdata), the data sets for the six fractal sets (gasket, carpet, modcarpet, quadrate, triangle, supergasket) become available. 
 These were calculated using the Java library [GeoStoch](http://www.uni-ulm.de/en/mawi/institute-of-stochastics/software.html); see [here](./?) for the main method. 
 The images have resolution $3000 \times 3000$, or $1500 \times 1500$ if the number `2` appears in the data set name.
 
@@ -23,7 +20,7 @@ fracCurv(gasket,arithmetic = FALSE)
 This results in a linear fit to the data 
 $y_{kj}  := \log \left( \varepsilon_j^{-k} |C_k(F_{\varepsilon_j})|\right), \quad k=0,\ldots, d$. The output contains estimated fractal dimension, curvatures and fitted linear model.
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
+![](./figure/LRE-1.png) 
 
 ```
 ## $frac.dim
@@ -57,7 +54,7 @@ fracCurv(gasket,arithmetic = TRUE)
 
 Here the period is estimated via a periodogram of the data: 
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-2.png) 
+![](./figure/NRE-1.png) ![](./figure/NRE-2.png) 
 
 ```
 ## $frac.dim

@@ -7,12 +7,12 @@ After loading the workspace `fracCurv.RData` (see main directory) in RStudio, th
 
 Data were calculated using the Java library [GeoStoch](http://www.uni-ulm.de/en/mawi/institute-of-stochastics/software.html); the main method [Haupt.java](./Haupt.java) has been used.
 
-The R-files [fracCurv.R](./fracCurv.R) and [periodogram.r](./periodogram.R) 
+The R-files [fracCurv.R](./fracCurv.R) and [periodogram.R](./periodogram.R) 
 contain the main chunks of R-code and are loaded automatically when loading `fracCurv.Rdata`.
 
 The directories `1500` and `3000` contain the images of size 1500 x 1500 resp. 3000 x 3000. 
 
-The Matlab file [barlow.m](./barlow.m) documents calculations of the fractal curvatures of the supergasket image, see also Steffen Winter's [Dissertation](http://www.math.kit.edu/iag4/~winter/media/dissmath629.pdf).
+The Matlab file `barlow.m` documents calculations of the fractal curvatures of the supergasket image, see also Steffen Winter's [Dissertation](http://www.math.kit.edu/iag4/~winter/media/dissmath629.pdf).
 
 ### Non-arithmetic fits
 

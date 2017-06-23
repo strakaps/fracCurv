@@ -1,3 +1,7 @@
+% analytical calculation of the fractal curvature of the "Supergasket", 
+% a fractal which has the same fractal dimension as the Sierpinski Carpet
+% but different fractal curvatures.
+
 function [C2,C1,C0] = barlow
 
 s = log(8)/log(3);
